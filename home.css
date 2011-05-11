@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.post {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #B4B4B4;
+}
+.post img {
+    border:2px solid #B4B4B4;
+}
+.post .text h2 {
+    margin:0;
+    margin-bottom: 10px;
+    font-size:11pt;
+    color:#666;
+}
+.post .text p {
+    margin:0;
+    margin-bottom: 6px;
+}
+.post .text ul {
+    margin:0;
+    margin-bottom: 6px;
+}
+#nih img {
+    float:left;
+    border:none;
+}
+#nih .text {
+    float:right;
+    text-align: left;
+    width:510px; /* 720-30*2-120-30 */
+}
+#america img {
+    float:right;
+}
+#america .text {
+    float:left;
+    text-align: right;
+    width:416px; /* 720-30*2-210-2*2-30 */
+}
+#pumc img {
+    float:left;
+}
+#pumc .text {
+    float:right;
+    text-align: left;
+    width:426px; /* 720-30*2-200-2*2-30 */
+}
+#marriage img {
+    float:left;
+    margin-right:5px;
+}
+#marriage .text {
+    float:right;
+    text-align: left;
+    width:187px; /* 720-30*2-100-100-225-4*3-20-5*3 */
+}
+#clinical img {
+    float:left;
+}
+#clinical .text {
+    float:right;
+    text-align: left;
+    width:406px; /* 720-30*2-220-2*2-30 */
+}
+#njrmc img {
+    float:left;
+    width:150px;
+    height:150px;
+}
+#njrmc .text {
+    float:right;
+    text-align: left;
+    width: 480px; /* 720-30*2-150-30 */
+}

@@ -1,22 +1,41 @@
 @charset "utf-8";
 
-/* Global */
 body {
     margin:0;
     padding:0;
-    background:#B4B4B4 url(images/bgpage.png) repeat-y top fixed;
-    font-family:Georgia, "URW Bookman L", serif;    
     text-align:center;
+
+    font-family:Georgia, "URW Bookman L", serif;    
     font-size:11pt;
+    
+    background:#B4B4B4 url(images/bgpage.jpg) top fixed  no-repeat;
+    -moz-background-size: 100% 100%;
+           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;
+           /* Opera 9.5 */
+    -webkit-background-size: 100% 100%;
+           /* Safari 3.0 */
+    background-size: 100% 100%;
+           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    -moz-border-image: url(images/bgpage.jpg) 0;
+           /* Gecko 1.9.1 (Firefox 3.5) */
 }
-.clear {
+
+div.clear {
+    height:0;
     clear:both;
 }
+
+/* CONTAINER */
+#container {
+    width: 720px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 /* HEADER */
 #header {
-    margin: 0 auto;
     padding: 10px 0 5px 0;
-    width: 690px;  
 }
 #header h1 {
     font-size:18pt;
@@ -24,12 +43,12 @@ body {
 #header h3 {
     margin:0;
     margin-bottom: 5px;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 #header p{
     margin-bottom:0;
     line-height: 150%;
-    font-size: 12pt;
+    font-size: 11pt;
     font-style:italic;
     text-align:justify;
 }
@@ -39,11 +58,61 @@ body {
     font-size: 11pt;
 }
 
+/* MASK */
+#mask {
+    background:#ddf url(images/bgmask.jpg) repeat; 
+    filter: Alpha(Opacity=90, Style=0);
+    -moz-opacity: 0.90;
+    opacity: 0.90;
+}
+
+/* MENU */
+#menu {
+    padding:10px;
+    border-bottom:1px solid #B4B4B4;
+    font-size:13pt;
+}
+#menu ul {
+    margin:0 auto;
+}
+#menu ul li {
+    margin:0 10px;
+    display:inline;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: #666;
+}
+#menu ul li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+#menu ul li.current_item a {
+    color:#000;
+}
+
+/* MAIN */
+#main {
+    padding:30px;
+    min-height:500px;
+    text-align:left;
+}
+#main p, #main ul {
+    line-height:150%;
+}
+#main a {
+    text-decoration: none;
+}
+#main a:hover {
+    text-decoration: underline;
+}
+#main a img {
+    border:none;
+}
+
 /* FOOTER */
 #footer {
-    margin: 0 auto;
     padding: 10px 0 20px 0;
-    width: 690px;  
 }
 #footer a {
     text-decoration: none;
@@ -73,58 +142,4 @@ body {
 }
 #footer #counter {
     margin-top:5px;
-}
-
-/* MAIN */
-#main {
-    margin:0 auto;
-    padding:5px 0; /* Background will thrink without padding */
-    width: 690px;
-    min-height:500px;
-    background:#ccc url(images/bgmain.jpg) repeat;
-    text-align:left;
-}
-#main p, #main ul {
-    line-height:150%;
-}
-#main a {
-    text-decoration: none;
-}
-#main a:hover {
-    text-decoration: underline;
-}
-#main a img {
-    border:none;
-}
-#main h2 {
-    font-size:12pt;
-}
-#main h3 {
-    font-size:11pt;
-}
-
-/* MAIN TOP */
-#main #top {
-    border-bottom:1px solid #B4B4B4;
-    text-align:center;
-    font-size:13pt;
-}
-#main #top ul {
-    margin:0 auto;
-    padding:5px 0 5px 0;
-}
-#main #top ul li {
-    margin:0 10px;
-    display:inline;
-}
-#main #top ul li a {
-    text-decoration: none;
-    color: #666;
-}
-#main #top ul li a:hover {
-    text-decoration: none;
-    color: #000;
-}
-#main #top ul li.current_item a {
-    color:#000;
 }
