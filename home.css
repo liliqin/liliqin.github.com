@@ -65,11 +65,9 @@
 }
 #njrmc img {
     float:left;
-    width:150px;
-    height:150px;
 }
 #njrmc .text {
     float:right;
     text-align: left;
-    width: 480px; /* 720-30*2-150-30 */
+    width: 465px; /* 720-30*2-165-30 */
 }
