@@ -2,7 +2,7 @@
 
 .post {
     margin-bottom: 30px;
-    border-bottom: 1px solid #B4B4B4;
+    border-bottom: 1px dotted #B4B4B4;
 }
 .post img {
     border:2px solid #B4B4B4;
