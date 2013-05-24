@@ -25,7 +25,7 @@ a:hover {
     text-decoration: underline;
 }
 p, ul, ol, table {
-    margin:5px 0;
+    margin:10px 0;
     line-height:1.5;
 }
 ul, ol {
@@ -34,154 +34,92 @@ ul, ol {
 h1, h2, h3, h4 {
     margin: 5px 0;
 }
-h1 {
-    font-size: 13pt;
-}
-h2 {
-    font-size: 12pt;
-}
-h3 {
-    font-size: 11pt;
-}
-h4 {
-    font-size: 10.5pt;
-}
 div.clear {
     height:0;
     clear:both;
 }
 
-/* Body : Container (Header : Mask (Menu : Main) : Footer) */
+/* Body : Container (Header (menu, name) : Main : Footer) */
 
 body {
-    font-family:Georgia, "URW Bookman L", serif;    
-    font-size:11pt;
+    font-family:"Arial", "helvetica", "sans-serif";
+	color:#444;
     text-align:center;
-    
-    background:#DADADA url(images/netmap.jpg) top fixed no-repeat;
+    background:#e2e2e4 url(images/bg.jpg) repeat fixed top left;
 }
 #container {
-    width: 720px; 
-    margin: 0 auto;
+    width: 630px; /*630+15*2 = 660*/
+    margin: 10px auto;
+	padding: 15px 15px 30px 15px;
+	background-color:#fff;
 }
 
 /* #header */
-#header h1 { 
-    margin:0;
-    padding:0;
-    padding-right:30px;
-    padding-top:30px;
-    padding-bottom: 15px;
-    font-size:18pt;
+#header {
+	border-bottom:1px solid #ccc3a6;
 }
-#header h2 {
-    margin:0;
-    padding:0;
-    padding-right:30px;
-    padding-bottom:5px;
-    font-size:12pt;
-    color:#444;
+#header #menu {
+	padding-bottom:20px;
+	border-bottom:1px solid #ccc3a6;
 }
-#header h3 {
-    margin:0;
-    padding:0;
-    padding-right:30px;
-    padding-bottom:5px;
-    font-size: 11pt;
-    color:#444;
+#header #menu ul {
+	margin:0;
+	padding:0;
 }
-#header p{
-    margin:0;
-    padding:0;
-    padding-top:10px;
-    padding-bottom:5px;
-    line-height: 150%;
-    font-size: 11pt;
-    font-style:italic;
-    text-align:justify;
+#header #menu ul li {
+	margin:0;
+	padding:0 10px;
+	display:inline;
 }
-#header p.meta {
-    padding-top:0;
-    padding-bottom:5px;
-    text-align:right;
+#header #menu ul li a {
+	color:#888;
+}
+#header #menu ul li.current-item a {
+	color:#000;
 }
 
-/* #footer */
-#footer {
-    padding-top: 15px;
-    padding-bottom: 10px;
+#header #name {
+	margin:3px 0;
+	padding:5px 0;
+	border-top:1px solid #ccc3a6;
+	border-bottom:1px solid #ccc3a6;
 }
-#footer ul {
-    margin:0;
-    padding:0;
-    padding-top:15px;
-    padding-bottom: 15px;
+#header #name p {
+	text-align:center;
+	font-size:180%;
+	color:#888;
 }
-#footer ul li {
-    display:inline;
-    padding-left:10px;
-    padding-right:10px;
-    border-right:1px solid #666;
-}
-#footer ul li.first-item {
-    border-left:1px solid #666;
-}
-#footer p a {
-    color:#000;
-    text-decoration: none;
-}
-#footer p a:hover {
-    color:red;
-    text-decoration: underline;
-}
-#footer #counter {
-    margin:0;
-    padding:5px 0;
-}
-
-/* #mask */
-#mask {
-    /*background:#ccc url(images/bgmask.jpg) repeat;*/
-    background-color: #fffafa;
-    /*filter: Alpha(Opacity=100, Style=0);
-    -moz-opacity: 1.0;
-    opacity: 1.0;*/
-}
-
-/* #menu */
-#menu { 
-    padding-top:8px;
-    padding-bottom: 5px;
-    border-bottom:1px solid #B4B4B4;
-    position:relative;
-}
-#menu table {
-    margin:0 auto;
-    padding:0;
-}
-#menu table tr td {
-    padding:0 10px;
-    font-size:13pt;
-}
-#menu table tr td a {
-    color: #666;
-    text-decoration: none;
-}
-#menu table tr td a:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-#menu table tr td.current_item a {
-    color:#000;
+#header #name p span {
+	/*display:none;*/
+	padding-left:5px;
+	font-style:italic;
+	font-size:50%;
 }
 
 /* #main */
 #main {
-    padding:30px;
+    padding:20px 30px; /*width = 660 - 30*2 = 600*/
     min-height:200px;
     text-align:left;
-    position: relative;
 }
+#main .divider {
+	text-align:center;
+	padding:20px 0;
+}
+#main h1 {
+	font-size:100%;
+}
+#main p, #main ul {
+	font-size:90%;
+}
+/* #footer */
+#footer {
+	font-size:90%;
+	color:#888;
+}
+#footer #counter {
+
+}
+
 
 
