@@ -1,3 +1,9 @@
+v6.1 (03/13/2015)
+* Move to Github
+* CNAME
+* .htaccess for host
+* Protocol doc
+
 v6.0 (05/23/2013)
 -----------------
 * New style
