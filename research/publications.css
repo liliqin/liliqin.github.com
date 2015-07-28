@@ -11,6 +11,9 @@
 #main div.pub-list ul {
 	font-size:80%;
 }
+#main div.pub-list ul li {
+	margin-bottom:5px;
+}
 #main div.pub-list p.year {
 	font-size:80%;
 	color:#f00;

@@ -1,4 +1,10 @@
+v7.0 (07/27/2015)
+-----------------
+* Separate professional pages into /research
+* Redesign pages to fit mobile devices
+
 v6.1 (03/13/2015)
+-----------------
 * Move to Github
 * CNAME
 * .htaccess for host
