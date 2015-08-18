@@ -1,93 +1,31 @@
 @charset "utf-8";
 
 #container {
-    width: 700px; /*width=700-30*2=640*/
+    width: 630px; /*width=630-30*2=570*/
 }
-#main h1 {
-	font-size:90%;
-}
-#main p.meta {
-	margin:0;
-    padding:0;
-    font-size:70%;
-    font-style:italic;
-}
-#main p {
-	font-size:80%;
-}
-#main .pic {
-	margin-top:15px;
-	overflow:hidden;
-}
-#main .pic img {
+#main div.pic {
+	float:left;
 	padding:2px;
 	border: 4px solid #ddd;
-}
-#main .pic p.meta {
+	width:248px; /*260-12*/
 	text-align:center;
 }
-#main #LincRNA .pic {
-	width:100%;
-	white-space:nowrap;
+#main div.pic img {
+	/*width:100%;*/ /*248+12=260*/
+	height:228px; /*228+12=240*/
 }
-#main #LincRNA .pic img {
-	height:158px;
-}
-#main #cis .text {
-	float:left;
-	width:400px;
-}
-#main #cis .pic {
+#main div.text {
 	float:right;
-	width:220px;
+	padding:5px 50px 5px 30px;
+	width:210px; /*570-260-50-30-20=210*/
+ 	height:230px; /*240-10*/
+	background-color:#efe5e9;
 }
-#main #cis .pic img {
-	width:95%;
-	margin-bottom:18px;
+#main div.text p {
+	font-style:italic;
+	color:#744c21;	
 }
-#main #SIRT .pic img {
-	width:95%;
+#main div.text p span {
+	font-style:normal;
+	font-size:130%;
 }
-#main #SIRT .left {
-	float:left;
-}
-#main #SIRT .right {
-	float:right;
-}
-#main #SIRT .pic-1 {
-	width:260px;
-	margin-bottom:20px;
-}
-#main #SIRT .text-1 {
-	width:360px;
-}
-#main #SIRT .pic-2 {
-	width:300px;
-}
-#main #SIRT .text-2 {
-	width:320px;
-}
-#main #Aurora-A .text {
-	float:right;
-	width:360px;
-}
-#main #Aurora-A .pic {
-	float:left;
-	width:260px;
-}
-#main #Aurora-A .pic img {
-	width:95%;
-	margin-bottom:18px;
-}
-
-#main #cTn-I .pic {
-	width:100%;
-	white-space:nowrap;
-}
-#main #cTn-I .pic img {
-	height:145px;
-}
-
-
-
-

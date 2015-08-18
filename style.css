@@ -24,12 +24,69 @@
 
 */
 
-body {
-	font-family:Helvetica, Arial, sans-serif;
-	text-align:center; /* Necessary for IE 6,7,8 */
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-p {
-	margin-top:10em;
-	font-size:1.5em;
+body {
+	background: #eee;
+	font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif; 
+	text-align: center; /* Necessary for IE 6,7,8 */
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#container {
+	height: 70%;
+	width: 75%;
+	margin: 0 auto ;
+	overflow: hidden;
+}
+
+#illus, #cards, #poem {
+	height: 100%;
+	width: 33.3%;
+	float: left;
+	overflow: hidden;
+}
+
+#cards #life, #cards #work {
+	height: 50%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#cards #life {
+	background-color: #ff0;
+}
+
+#cards #work {
+	background-color: #0ff;
+}
+
+#life h1, #work h1 {
+	margin: 0;
+	padding: 1em 0 0 0;
+	font-family: 'Frijole', cursive;
+	font-size: 1.25em;
+}
+
+#life p, #work p {
+	margin: 0;
+	padding: 0.5em 0 1em 0;
+	font-style: italic;
+}
+
+#life img {
+	height: 40%;
+	max-height: 40%;
 }
