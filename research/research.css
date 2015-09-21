@@ -9,11 +9,11 @@
 #main p.meta {
 	margin:0;
     padding:0;
-    font-size:70%;
+    font-size:75%;
     font-style:italic;
 }
-#main p {
-	font-size:80%;
+#main .text {
+	font-size:90%;
 }
 #main .pic {
 	margin-top:15px;
@@ -26,26 +26,20 @@
 #main .pic p.meta {
 	text-align:center;
 }
-#main #LincRNA .pic {
-	width:100%;
-	white-space:nowrap;
-}
-#main #LincRNA .pic img {
-	height:158px;
-}
+
 #main #cis .text {
 	float:left;
-	width:400px;
+	width:390px;
 }
 #main #cis .pic {
 	float:right;
-	width:220px;
+	width:240px;
 }
 #main #cis .pic img {
 	width:95%;
 	margin-bottom:18px;
 }
-#main #SIRT .pic img {
+#main #SIRT .pic-1 img {
 	width:95%;
 }
 #main #SIRT .left {
@@ -58,14 +52,27 @@
 	width:260px;
 	margin-bottom:20px;
 }
+#main #SIRT .pic-1 img {
+	width:95%;
+}
 #main #SIRT .text-1 {
 	width:360px;
 }
 #main #SIRT .pic-2 {
 	width:300px;
 }
+#main #SIRT .pic-2 img {
+	width:95%;
+}
 #main #SIRT .text-2 {
 	width:320px;
+}
+#main #SIRT .pic-3 {
+	width:100%;
+	white-space:nowrap;
+}
+#main #SIRT .pic-3 img {
+	height:158px;
 }
 #main #Aurora-A .text {
 	float:right;
