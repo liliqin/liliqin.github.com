@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #container {
-    width: 630px; /*width=630-30*2=570*/
+    width: 650px; /*width=650-30*2=590*/
 }
 #main div.pic {
 	float:left;
@@ -16,16 +16,14 @@
 }
 #main div.text {
 	float:right;
-	padding:5px 20px 5px 20px;
-	width:250px; /*570-260-20-20-20=250*/
+	padding:5px 30px 5px 30px;
+	width:250px; /*590-260-30-30-20=250*/
  	height:230px; /*240-10*/
 	background-color:#efe5e9;
 }
 #main div.text p {
-	font-style:italic;
 	color:#744c21;	
 }
 #main div.text p span {
-	font-style:normal;
 	font-size:130%;
 }
