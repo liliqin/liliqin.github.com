@@ -1,3 +1,4 @@
-Personal website (liliqin.com).
+Lili Qin
+========
 
-lili@liliqin.com
+[http://liliqin.com](http://liliqin.com)
