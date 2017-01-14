@@ -1,9 +1,8 @@
-@charset "utf-8";
-
-/* Redefine css for cross-browser */
-* {
-    margin:0;
-    padding:0;
+body {
+    background:#e2e2e4 url(images/bg.jpg) repeat fixed top left;
+    font-family:"Arial", "helvetica", "sans-serif";
+	color:#444;
+    text-align:center;
 }
 img {
     border:none;
@@ -16,11 +15,7 @@ a:visited {
     color: purple;
     text-decoration: none;
 }
-a:active {
-    color: red;
-    text-decoration: underline;
-}
-a:hover {
+a:hover, a:active {
     color: red;
     text-decoration: underline;
 }
@@ -28,11 +23,11 @@ p, ul, ol, table {
     margin:10px 0;
     line-height:1.5;
 }
-ul li, ol li {
-	margin-bottom:5px;
-}
 ul, ol {
     padding-left:25px;
+}
+ul li, ol li {
+	margin-bottom:5px;
 }
 h1, h2, h3, h4 {
     margin: 5px 0;
@@ -42,22 +37,13 @@ div.clear {
     clear:both;
 }
 
-/* Body : Container (Header (menu, name) : Main : Footer) */
-
-body {
-    font-family:"Arial", "helvetica", "sans-serif";
-	color:#444;
-    text-align:center;
-    background:#e2e2e4 url(images/bg.jpg) repeat fixed top left;
-}
 #container {
     width: 630px; /*630+15*2 = 660*/
-    margin: 10px auto;
+    margin: 0 auto;
 	padding: 15px 15px 30px 15px;
 	background-color:#fff;
 }
 
-/* #header */
 #header {
 	border-bottom:1px solid #ccc3a6;
 }
@@ -105,7 +91,6 @@ body {
 	font-size:50%;
 }
 
-/* #main */
 #main {
     padding:20px 30px; /*width = 660 - 30*2 = 600*/
     min-height:200px;
@@ -126,9 +111,7 @@ body {
 	font-size:90%;
 	color:#888;
 }
-#footer #counter {
 
-}
 
 
 
