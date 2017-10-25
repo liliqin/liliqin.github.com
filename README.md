@@ -1,4 +1,2 @@
-Lili Qin
-========
-
-[http://liliqin.com](http://liliqin.com)
+# liliqin.github.io
+http://liliqin.com

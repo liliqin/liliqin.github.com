@@ -1,9 +1,5 @@
-
-html, body {
-	margin: 0;
-}
-
 body {
+	margin: 0;
 	background: #fff;
 	text-align: center; /* Necessary for IE 6,7,8 */
 	font-family: 'Times New Roman', Times, serif;
